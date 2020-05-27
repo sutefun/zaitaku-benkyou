@@ -5,8 +5,15 @@
 
 ほかの二つは（darknetとyolov3-ultralytics）参照や補足としても読みました。
 
-## アーキテクチャ
-![YoloV3のアーキテクチャ](https://miro.medium.com/max/2000/1*d4Eg17IVJ0L41e7CTWLLSg.png)
+## YoloV3のアーキテクチャ
+![](https://miro.medium.com/max/2000/1*d4Eg17IVJ0L41e7CTWLLSg.png)
+
+特徴抽出をするための新しいネットワークはDarknet-53とresidual networkです． ピンクのCNNブロックでショートカットコネクションを使っていて，ネットワークは著しく大きくなった． このネットワークは53個のconvolutional layersを持つのでDarknet-53と呼ぶんだ．
+3層の予想ブロックがあります。それらは　(13x13)ブロック、(26x26)ブロック、(52x52)ブロックです。
+それぞれ３レベルのdownsamplingネットワークからアウトプットを集めて、予想マトリクスを取ります
+
+3つの予想ブロックからのアウトプットマトリクスを連結し、10467x85のマトリクスをNon Maximum Suppresionアルゴリズムで、バウンディングボックスを計算します
+
 
 ## アウトプットの例
 
