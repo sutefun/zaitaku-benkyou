@@ -1,0 +1,5 @@
+('weights',
+ 'weights',
+ [],
+ 'DATA',
+ [('weights\\yolov3.weights', 'weights\\yolov3.weights', 'DATA')])

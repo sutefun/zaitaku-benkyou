@@ -1,0 +1,8 @@
+('my_demo/image_asset',
+ 'image_asset',
+ [],
+ 'DATA',
+ [('image_asset\\drop_here_600x600.jpg',
+   'my_demo/image_asset\\drop_here_600x600.jpg',
+   'DATA'),
+  ('image_asset\\loading.gif', 'my_demo/image_asset\\loading.gif', 'DATA')])

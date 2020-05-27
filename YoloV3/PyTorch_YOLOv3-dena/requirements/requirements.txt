@@ -1,0 +1,10 @@
+torch
+cython
+numpy
+matplotlib
+opencv_python
+tensorboardX
+PyYAML
+pycocotools
+
+

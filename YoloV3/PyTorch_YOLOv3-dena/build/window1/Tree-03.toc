@@ -1,0 +1,6 @@
+('config',
+ 'config',
+ [],
+ 'DATA',
+ [('config\\yolov3_default.cfg', 'config\\yolov3_default.cfg', 'DATA'),
+  ('config\\yolov3_eval.cfg', 'config\\yolov3_eval.cfg', 'DATA')])
