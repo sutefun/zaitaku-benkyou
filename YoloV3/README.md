@@ -1,5 +1,8 @@
 # YoloV3の勉強用のソースコード
 
+## 自分でお試し出来るソフト
+exe化されたプログラム　－＞　[Google Drive](https://drive.google.com/open?id=1cXLo9twMmtSFcnaA2PNDt9O-n5GFiChw)
+
 ## イントロ
 メインコードはpytorch-yolo-denaです。主にそれを分解しました。
 
