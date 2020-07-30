@@ -2,154 +2,245 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>忍者</title>
+  <style>
+    header{
+      background: url(img/pikachu.webp);
+      background-size: cover;
+      background-position: center;
+      min-height: 500px;
+    }
+    body{
+      /*background-color: pink;*/
+    }
+
+    @media screen and (max-width: 670px){
+      header{
+        min-height: 500px;
+      }
+    }
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+  </style>
 </head>
-<body class="text-gray-600 font-body">
+<body>
 
-  <div class="grid md:grid-cols-3">
-    <div class="md:col-span-1 md:flex md:justify-end">
-      <nav class="text-right">
-        <div class="flex justify-between items-center">
-          <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-            <a href="/" class="hover:text-gray-700 tracking-widest">フード忍者</a>
-          </h1>
-          <div class="px-4 cursor-pointer md:hidden" id="burger">
-            <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
-          </div>
-        </div>
-        <ul class="text-sm mt-6 hidden md:block" id="menu">
-          <li class="text-gray-700 font-bold py-1">
-            <a href="#" class="block px-4 flex justify-end border-r-4 border-primary">
-              <span>ホーム</span>
-              <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-            </a>
-          </li>
-          <li class="py-1">
-            <a href="#" class="block px-4 flex justify-end border-r-4 border-white">
-              <span>忍者とは</span>
-              <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
-            </a>
-          </li>
-          <li class="py-1">
-            <a href="#" class="block px-4 flex justify-end border-r-4 border-white">
-              <span>問い合わせ</span>
-              <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-            </a>
-          </li>
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper pink lighten-3">
+      <div class="container">
+        <a href="#" class="brand-logo">忍者</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#photos">写真</a></li>
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#contact">問い合わせ</a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Instagram"> 
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a></li>
         </ul>
-      </nav>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="#">写真</a></li>
+          <li><a href="#">サービス</a></li>
+          <li><a href="#">問い合わせ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- photo / grid -->
+  <section class="container section scrollspy" id="photos">
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/portrait.webp" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">にょにょ</h2>
+        <p>あああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+      </div>
     </div>
-  
-    <main class="px-16 py-6 md:col-span-2 bg-gray-100">
-      <div class="flex justify-center md:justify-end">
-        <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">ログイン</a>
-        <a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">登録</a>
+    <div class="row">
+      <div class="col s12 l4 offset-l1 push-l7">
+          <img src="img/city.webp" alt="" class="responsive-img materialboxed">
       </div>
-
-      <header class="mt-4">
-        <h2 class="text-gray-700 text-6xl font-semibold leading-none tracking-wider">レシピ</h2>
-        <h3 class="text-2xl font-semibold tracking-wider">For Ninjas</h3>
-      </header>
-
-      <div>
-        <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">最新のレシピ</h4>
-  
-        <div class="mt-8 grid lg:grid-cols-3 gap-10">
-          <!-- cards go here -->
-          <div class="card hover:shadow-lg"> 
-            <img src="img/curry_udon.jpg" alt="stew" class="h-32 sm:h-48 w-full object-cover">
-            <div class="m-4">
-              <span class="font-bold">カレーうどん</span>
-              <span class="block text-gray-500 text-sm">Recipe by 太郎</span>
-            </div>
-            <div class="badge">
-              <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <span>25 分</span>
-            </div>
-          </div>
-          <div class="card hover:shadow-lg"> 
-            <img src="img/sushi.jpg" alt="noodles" class="h-32 sm:h-48 w-full object-cover">
-            <div class="m-4">
-              <span class="font-bold">寿司</span>
-              <span class="block text-gray-500 text-sm">Recipe by 太郎</span>
-            </div>
-            <div class="badge">
-              <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <span>25 分</span>
-            </div>
-          </div>
-          <div class="card hover:shadow-lg"> 
-            <img src="img/unagi.jpg" alt="curry" class="h-32 sm:h-48 w-full object-cover">
-            <div class="m-4">
-              <span class="font-bold">うなぎ</span>
-              <span class="block text-gray-500 text-sm">Recipe by 太郎</span>
-            </div>
-            <div class="badge">
-              <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <span>25 分</span>
-            </div>
-          </div>
-        </div>
-
-        <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">人気なレシピ</h4>
-
-        <div class="mt-8 grid lg:grid-cols-3 gap-10">
-          <!-- cards go here -->
-          <div class="card hover:shadow-lg"> 
-            <img src="img/curry_udon.jpg" alt="stew" class="h-32 sm:h-48 w-full object-cover">
-            <div class="m-4">
-              <span class="font-bold truncate block">カレーうどん with Feta Cheese</span>
-              <span class="block text-gray-500 text-sm">Recipe by 太郎</span>
-            </div>
-            <div class="badge">
-              <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <span>25 分</span>
-            </div>
-          </div>
-          <div class="card hover:shadow-lg"> 
-            <img src="img/sushi.jpg" alt="noodles" class="h-32 sm:h-48 w-full object-cover">
-            <div class="m-4">
-              <span class="font-bold">寿司</span>
-              <span class="block text-gray-500 text-sm">Recipe by 太郎</span>
-            </div>
-            <div class="badge">
-              <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <span>25 分</span>
-            </div>
-          </div>
-          <div class="card hover:shadow-lg"> 
-            <img src="img/unagi.jpg" alt="curry" class="h-32 sm:h-48 w-full object-cover">
-            <div class="m-4">
-              <span class="font-bold">うなぎ</span>
-              <span class="block text-gray-500 text-sm">Recipe by 太郎</span>
-            </div>
-            <div class="badge">
-              <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <span>25 分</span>
-            </div>
-          </div>
-        </div>
+      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+        <h2 class="indigo-text text-darken-4">ピカチュウ</h2>
+        <p>えええええええええええええええええええええええええええええええええええええええええええええええええええ</p>
       </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/nature.webp" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">わあああ</h2>
+        <p>風雨宇うううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううう</p>
+      </div>
+    </div>
+  </section>
 
-      <div class="mt-12 flex justify-center">
-        <div class="btn bg-secondary-100 text-secondary-200 inline-block hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">更に表示</div>
-      </div>    
-    </main>
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/tokyo.webp" alt="" class="responsive-img">
+    </div>
   </div>
 
+  <!-- services / tabs -->
+  <section class="section container scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">タイトル</h2>
+        <p>ああああああああああああああああああああああああああああああああああああああああああああああ</p>
+        <p>うううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううう</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <!-- tabs -->
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="active indigo-text text-darken-4">タイトルA</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="indigo-text text-darken-4">タイトルB</a>
+          </li>
+        </ul>
+        <div id="photography" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">タイトルA</p>
+            <p>あああああああああああああああああああああああああああああああああああああああああああああ</p>
+            <p>うううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううう</p>
+        </div>
+        <div id="editing" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Editing</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+            <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/japan.webp" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- contact form -->
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">問い合わせ</h2>
+        <p>あああああああああああああああああああああああああああああああああああああああああああああ</p>
+        <p>ああああああああああああああああああああああああああああああああああああああああああああ</p>
+        <p>うううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううう</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form>
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">メール</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+            <label for="message">メッセージ</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">date_range</i>
+            <input type="text" id="date" class="datepicker">
+            <label for="date">デートを選ぶ</label>
+          </div>
+          <div class="input-field">
+            <p>問い合わせ内容</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>ああ</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>ぶぶ</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">送る</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>About</h5>
+          <p>あああああああああああああああああああああああああああああああああああああああああああああ</p>
+          <p>うううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううううう</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">コンタクト</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Twitter</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2099 忍者</div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
-    const burger = document.querySelector('#burger');
-    const menu = document.querySelector('#menu');
+    $(document).ready(function(){
 
-    burger.addEventListener('click', (e) => {
-      if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
-      } else {
-        menu.classList.add('hidden');
-      }
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+
     });
-
   </script>
 </body>
 </html>
