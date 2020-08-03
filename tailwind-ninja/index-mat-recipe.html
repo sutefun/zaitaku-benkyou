@@ -1,0 +1,211 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+     <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+  <title>忍者レシピ</title>
+
+    <style>
+        header{
+            /* background: blue ; */
+            /* background-size: cover;
+            background-position: center; */
+            min-height: 1rem;       
+        }
+        body{
+            /* background : grey */
+        }
+        /* .row{
+            border:1px solid black;  
+        }
+        .col{
+            border:1px solid black;  
+        } */
+    </style>
+
+</head>
+
+<body class="grey lighten-3" >
+    
+    <!-- navbar -->
+    <header class="blue lighten-2">
+        <nav class="nav-wrappe transparent">
+
+            <div class="container">
+                <a href="#!" class="brand-logo">忍者</a>
+
+                <a href="#!" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#!recipes">レシピ</a></li>
+                    <li><a href="#!services">サービス</a></li>
+                    <li><a href="#!contact">問い合わせ</a></li>
+                    
+                    <li><a href="#!" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Instagram"> 
+                    <i class="fab fa-instagram"></i>
+                    </a></li>
+                    <li><a href="#!" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Facebook">
+                    <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li><a href="#!" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Twitter">
+                    <i class="fab fa-twitter"></i>
+                    </a></li>
+                    
+                    <li><a class="btn-small orange lighten-1" href="#!">ログイン</a></li>
+                    <li><a class="btn-small orange lighten-1" href="#!">登録</a></li>
+
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a class="btn-small orange lighten-1" href="#!">ログイン</a></li>
+                    <li><a class="btn-small orange lighten-1" href="#!">登録</a></li>
+
+                    <li><a href="#!">写真</a></li>
+                    <li><a href="#!">サービス</a></li>
+                    <li><a href="#!">問い合わせ</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+    
+    <div class="container center-align" id="latest_recipe">
+        <h6 class="left-align" >最新のレシピ</h6>
+        <div class="row">
+
+            <!-- card 1 -->
+            <div class="col s8 m6 l4">
+                <div class="card">
+                    <!-- card image -->
+                    <div class="card-image">
+                        <img src="img/unagi.jpg" alt="">
+                        <div class="right-align ">
+                            <a href="#!" class="love btn-floating halfway-fab pink lighten-1">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                        </div>  
+                    </div>
+
+                    <!-- card content -->
+                    <div class="card-content">
+                        <span class="card-title left-align">Unagi</span>
+                        <p>酒の提供の有無にかかわらず、すべてのカラオケ店に対し、3日から今月末まで営業時間を午後10時までに短縮するよう要請します。</p>
+                    </div>
+
+                    <div class="card-action">
+                        
+                        <a href="#!">share</a>
+                        <a href="#!">view</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col s8 m6 l4">
+                <div class="card">
+                    <!-- card image -->
+                    <div class="card-image">
+                        <img src="img/sushi.jpg" alt="">
+                        <div class="right-align ">
+                            <a href="#!" class="love btn-floating halfway-fab pink lighten-1">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                        </div>  
+                    </div>
+
+                    <!-- card content -->
+                    <div class="card-content">
+                        <span class="card-title left-align">Sushi</span>
+                        <p>酒の提供の有無にかかわらず、すべてのカラオケ店に対し、3日から今月末まで営業時間を午後10時までに短縮するよう要請します。</p>
+                    </div>
+
+                    <div class="card-action">
+                        
+                        <a href="#!">share</a>
+                        <a href="#!">view</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container center-align" id="popular_recipe">
+        <h6 class="left-align" >人気なレシピ</h>
+
+            <div class="row">
+                                
+                <!-- card 2 -->
+                <div class="col s8 m6 l4">
+                    <div class="card">
+                        <!-- card image -->
+                        <div class="card-image">
+                            <img src="img/sushi.jpg" alt="">
+                            <div class="right-align ">
+                                <a href="#!" class="love btn-floating halfway-fab pink lighten-1">
+                                <i class="material-icons">favorite</i>
+                            </a>
+                            </div>  
+                        </div>
+
+                        <!-- card content -->
+                        <div class="card-content">
+                            <span class="card-title left-align">Sushi</span>
+                            <p>酒の提供の有無にかかわらず、すべてのカラオケ店に対し、3日から今月末まで営業時間を午後10時までに短縮するよう要請します。</p>
+                        </div>
+
+                        <div class="card-action">
+                            
+                            <a href="#!">share</a>
+                            <a href="#!">view</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+    
+          $('.sidenav').sidenav();
+          $('.materialboxed').materialbox();
+        //   $('.parallax').parallax();
+          $('.tabs').tabs();
+          $('.datepicker').datepicker({
+            disableWeekends: true,
+            yearRange: 1
+          });
+        //   $('.tooltipped').tooltip();
+        //   $('.scrollspy').scrollSpy();
+    
+          $(".love").hover(
+                function(){
+                    $(this).addClass('pulse');
+            }, 
+                function(){
+                    $(this).removeClass('pulse');
+
+            });
+
+        });
+      </script>
+
+</body>
+
+</html>
