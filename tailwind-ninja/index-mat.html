@@ -8,7 +8,7 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <title>忍者</title>
   <style>
     header{
@@ -33,9 +33,19 @@
     .tabs .indicator{
       background-color: #1a237e;
     }
-    .tabs .tab a:focus, .tabs .tab a:focus.active{
+    .tabs .tab a:focus, 
+    .tabs .tab a:focus.active{
       background: transparent;
     }
+    .tabs .tab a:hover{
+    	background: #CCCCCC
+    }
+
+	a > svg,
+	a > i {
+	  pointer-events: none;
+	}
+
   </style>
 </head>
 <body>
@@ -52,15 +62,21 @@
           <li><a href="#photos">写真</a></li>
           <li><a href="#services">サービス</a></li>
           <li><a href="#contact">問い合わせ</a></li>
-          <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Instagram"> 
-            <i class="fab fa-instagram"></i>
-          </a></li>
-          <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Facebook">
+
+          <li>          	
+	          <a href="#instagram" class="tooltipped btn-floating indigo darken-4"	data-tooltip="Instagram" > 
+	          	<i class="fab fa-instagram"></i>
+	          </a>
+      	  </li>
+
+          <li><a href="#facebook" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Facebook">
             <i class="fab fa-facebook"></i>
           </a></li>
-          <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Twitter">
+
+          <li><a href="#twitter" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Twitter">
             <i class="fab fa-twitter"></i>
           </a></li>
+
         </ul>
         <ul class="sidenav grey lighten-2" id="mobile-menu">
           <li><a href="#">写真</a></li>
@@ -199,7 +215,7 @@
   </section>
 
   <!-- footer -->
-  <footer class="page-footer grey darken-3">
+  <footer class="page-footer grey darken-3 scrollspy" id="ff" >
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -210,10 +226,10 @@
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">コンタクト</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
-            <li><a class="grey-text text-lighten-3" href="#">Twitter</a></li>
+            <li><a class="grey-text text-lighten-3 scrollspy" id="facebook" href="#!">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3 scrollspy" id="twitter" href="#!">Twitter</a></li>
             <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
-            <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
+            <li><a class="grey-text text-lighten-3 scrollspy" id="instagram" href="#!">Instagram</a></li>
           </ul>
         </div>
       </div>
@@ -225,7 +241,7 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
     $(document).ready(function(){
 
