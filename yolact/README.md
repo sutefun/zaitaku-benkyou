@@ -2,6 +2,6 @@
 :-------------------------:|:-------------------------:
 ![](images/chefs.jpg)  |  ![](output_images/chefs.png)
 
-![](images/crowds.jpg)  |  ![](output_images/crowds.png)
+![](images/crowd.jpg)  |  ![](output_images/crowd.png)
 
 ![](images/room.webp)  |  ![](output_images/room.png)
